@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores Anidados</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ddd;
+        }
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        .nivel1 { width: 500px; height: 300px; background-color: gray; }
+        .nivel2 { width: 400px; height: 250px; background-color: yellow; }
+        .nivel3 { width: 300px; height: 200px; background-color: orange; }
+        .nivel4 { width: 200px; height: 150px; background-color: red; }
+        .nombre {
+            width: 150px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor nivel1">
+        <div class="contenedor nivel2">
+            <div class="contenedor nivel3">
+                <div class="contenedor nivel4">
+                    <div class="nombre">Alejandra Andrea Herrera Fernandez</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
